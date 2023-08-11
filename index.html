@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts link start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- google fonts link ends -->
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css">
+    <title>DOM_practice</title>
+
+    <!-- fontawsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+<section id="quote">
+<div class="quotes-container"> 
+    <header>
+        <h1>Todo List</h1>
+    </header>
+    <form>  
+        <input type="text" class="todo-input" placeholder="Add your task here">
+        <button class="todo-button" type=" submit" onclick="addtodo()">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="delete-all-button" onclick="deleteAllTodos()"><i class="fa-solid fa-trash"></i></i></button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>                
+            </select>
+        </div> 
+        <!-- <button class="delete-all-button" onclick="deleteAllTodos()"><i class="fa-solid fa-trash"></i></i></button> -->
+    </form>
+
+    <div class="todo-container">
+        <ul class="todo-list">
+            <!-- <div class="todo">
+                 <li></li>
+                <button>Delete</button>
+                <button>Checked</button>
+                <button>edit</button>
+            </div> -->
+        </ul>
+    </div>
+    <button class="delete-checked-button" onclick="deleteChekedItems()">Delete Selected</button>
+</div>
+</section> 
+<section id="quote">
+    <div class="quotes-container">
+        <div class="quotes"><p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+            <button class="btn" onclick="getQuotes()">Todays Quote!</button>
+        </div>
+    </div>
+</section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
